@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+ <meta charset="UTF-8">
+ 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+ <meta name="descriprion" content="Cześć! Jestem Martyna i zapraszam Cię do odwiedzin strony internetowej, na której znajdziesz informacje o mnie, kilka moich projektów oraz skontaktujesz się ze mną!">
+ <meta name="keywords" content="webdesigner, frontend, it, strona internetowa, portfolio, projekty">
+ 
+ 
+ 
+ <title>Martyna Filipowicz - Frontend Designer</title>
+ 
+	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" href="css/fontello.css">
+
+<script src="https://kit.fontawesome.com/cd4426d543.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="jquery.scrollTo.min"></script>
+
+<script>
+	jQuery(function($)
+	{
+		//zresetuj scrolla
+		$.scrollTo(0);
+		
+		$('.scrollup').click(function() {$.scrollTo($('body'), 1000); }); 		
+	}
+	);
+	
+	//pokaz podczas przewijania
+	$(window).scroll(function()
+	{ 
+		if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+		else $('.scrollup').fadeOut();
+	}
+	);
+</script>
+
+
+</head>
+<body>
+	<main>
+		<nav>
+			<ul id="nav"> 
+			<li class="border"></li>
+				<li class="menu"><a href="#about"> O mnie </a></li>
+				<li class="border"></li>
+				<li class="menu"><a href="#skills"> Umiejętności </a></li>
+				<li class="border"></li>
+				<li class="menu"><a href="#contact"> Kontakt </a></li>
+				<li class="border"></li>
+			</ul>
+		</nav>
+		
+		
+			<header id="welcome">
+				<h1>Cześć, jestem <span>Martyna</span></h1>
+				<p> a to moja pierwsza strona internetowa</p>
+				<p><i class="fa-solid fa-laptop-code fa-5x"></i></p>
+			</header>
+		
+		
+		<a href="#" class="scrollup">&uarr;</a>
+		
+		<section id="about">
+		<div class="container">
+			<h2>O mnie</h2>
+			<p>Nazywam się Martyna Filipowicz i spełniam swoje marzenie o byciu programistka. </p>
+			<q> Tutaj powinien znaleźć się jakiś ekstra istotny coachowy cytat, ale po prostu nimi się zbyt mocno nie interesuję </q>
+			<p> Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla vitae lacinia felis. Vivamus quam lacus, convallis vel scelerisque non, semper porttitor velit. Integer eros purus, maximus sed eros in, accumsan dapibus odio. Pellentesque fringilla elit a quam vulputate scelerisque. Pellentesque a aliquet mi. Suspendisse viverra in lectus in commodo. Donec hendrerit in risus et vulputate. Suspendisse potenti. Praesent ultrices eu dui in lobortis.  </p>
+		</div>
+		</section>
+		
+		<section id="skills">
+			<h3>Umiejętności</h3>
+		<div class="grid" class="container">
+			<div class="brand1"><i class="fa-brands fa-html5"></i></div>
+			<div class="brand2"><i class="fa-brands fa-css3"></i></div>
+			<div class="brand3"><i class="fa-brands fa-square-js"></i></div>
+			<div class="lang1">HTML 5</div>
+			<div class="lang2">CSS</div>
+			<div class="lang3">JavaScript</div>
+			
+			<div class="star1">
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-regular fa-star"></i>
+				<i class="fa-regular fa-star"></i>
+			</div>
+			
+			<div class="star2">
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-regular fa-star"></i>
+				<i class="fa-regular fa-star"></i>
+			</div>
+			
+			<div class="star3">
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-regular fa-star"></i>
+				<i class="fa-regular fa-star"></i>
+				<i class="fa-regular fa-star"></i>
+				<i class="fa-regular fa-star"></i>
+			</div>
+		</div>
+		</section>	
+		
+		<section>
+		<div class="container" id="contact">
+			<h4>Zapraszam do współpracy</h4>
+			<ul>
+				<li class="social"><a href="https://www.linkedin.com/in/martyna-filipowicz-058840247/" target="_blank"><i class="icon-linkedin"></i></a></li>
+				
+				<li class="social"><a href="https://github.com/Mart-Filipowicz-Front" target="_blank"><i class="icon-github"></i></a></li>
+				
+				<li class="social"><a href="mailto:mmartynafilipowicz@gmail.com"><i class="icon-mail"></i></a></li>
+				
+			</ul>
+		</div>
+		</section>	
+	
+
+	</main>
+	
+	<footer id="footer">
+	<p> Dziękuję za wizytę! &copy; Martyna Filipowicz </p>
+	</footer>
+	
+</body>
+</html>
